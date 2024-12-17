@@ -1,0 +1,515 @@
+/* Google Fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* Body and Overall Layout */
+body {
+  background-color: #15372c;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3a2e2d; /* Coffee color */
+}
+
+.logo img {
+  width: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #15372c;
+  font-weight: bold;
+}
+
+nav ul li .contact-btn {
+  background-color: #b0452d;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+nav ul li .contact-btn:hover {
+  background-color: transparent;
+  color: #3a2e2d;
+  border: 2px solid #b0452d;
+}
+
+/* Hero Section */
+.intro {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.get-started {
+  background-color: transparent;
+}
+
+.start-trial {
+  background-color: transparent;
+  color: #15372c;
+}
+
+.get-started:hover {
+  background-color: white;
+  color: #15372c;
+}
+
+.start-trial:hover {
+  background-color: white;
+  color: #15372c;
+}
+.wave-section img {
+  width: 500px;
+  border-radius: 10px;
+}
+/* Wave Section Container */
+.wave-section {
+  position: relative;
+  background-color: #15372c; /* Dark Green */
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+/* The wave itself */
+.wave-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Align the wave with the bottom */
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'><path d='M0 0 Q 300 100 600 0 T 1200 0 V 120 H 0 Z' fill='%23ffffff'/></svg>");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* Content inside the wave section */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: #1f4e3c;
+}
+
+/* Our Missions */
+.mission-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  background-color: white;
+}
+.mission-text h2 {
+  color: #1f4e3c;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.mission-text {
+  flex: 1;
+}
+
+/* Right Content (Images) */
+.mission-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+  gap: 1rem;
+  flex: 1;
+}
+
+.mission-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure consistent image sizing */
+}
+
+/* Icons Section */
+.icons-section {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon span {
+  font-size: 1rem;
+  color: #1f4e3c;
+}
+/* Image Section Below the Wave */
+.image-section {
+  background-color: #ffffff; /* White background */
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional styling for rounded corners */
+  margin-bottom: 1rem;
+}
+
+.image-section h2 {
+  color: #1f4e3c; /* Dark Green */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.image-section p {
+  color: #444;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+  background-color: white;
+}
+
+/* Meet the Team Section */
+.team-section {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: white;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1f4e3c;
+  margin-bottom: 2rem;
+}
+
+/* Container for the section */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #444;
+}
+
+/* Card Container */
+.team-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.team-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Overlay */
+.team-card .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: #fff;
+  text-align: left;
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f9f7f3;
+  color: #444;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  flex: 1;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1f4e3c;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.dot.active {
+  background-color: #e9b872;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  color: #444;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info-item span {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.info-item p {
+  color: #444;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #1d3b30;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #274e3b;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  align-items: start;
+  color: #444;
+}
+
+.footer-logo h3 {
+  color: #1d3b30;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  color: #1d3b30;
+}
+.footer-contact p {
+  color: #444;
+}
+.footer-social .social-icons a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #12291d;
+  font-size: 14px;
+}

@@ -29,10 +29,16 @@
           <span>ColCo</span>
         </div>
         <ul>
-          <li><a href="#">The Project</a></li>
-          <li><a href="#">Meet the Teams</a></li>
-          <li><a href="ml.html">Machine Learning</a></li>
-          <li><a href="#" class="contact-btn">Contact Us</a></li>
+          <li><a href="index.html">The Project</a></li>
+          <li class="dropdown">
+            <a href="ml.html">Meet the Teams</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Colombia Team</a></li>
+              <li><a href="ml.html">Disease Detection</a></li>
+              <li><a href="#">Data Collection</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact-section" class="contact-btn">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -52,8 +58,8 @@
         detect and manage cocoa pod diseases efficiently and precisely.
       </p>
       <div class="buttons">
-        <a href="#" class="btn get-started">Get Started</a>
-        <a href="#" class="btn start-trial">Start free trial</a>
+        <a href="#" class="btn get-started">Learn More</a>
+        <!--<a href="#" class="btn start-trial">Start free trial</a>-->
       </div>
     </section>
 
@@ -103,31 +109,34 @@
       <h2>Meet the Team!</h2>
       <div class="team-container">
         <!-- Card 1 -->
-        <div class="team-card">
-          <img src="image/cocoa_plant.jpg" />
+        <a href="#" class="team-card">
+          <img src="image/cocoa_plant.jpg" alt="Colombia Team" />
           <div class="overlay-text">
             <h3>Colombia Team</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-        </div>
+        </a>
 
         <!-- Card 2 -->
-        <div class="team-card">
-          <img src="image/plant-ml.jpg" />
+        <a href="ml.html" class="team-card">
+          <img src="image/plant-ml.jpg" alt="Machine Learning Team" />
           <div class="overlay-text">
-            <h3>Machine Learning Team</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Disease Detection</h3>
+            <p>
+              Team Objective: Develop a deep-learning alogrithm which detect
+              diseases in cocoa pods.
+            </p>
           </div>
-        </div>
+        </a>
 
         <!-- Card 3 -->
-        <div class="team-card">
-          <img src="image/sensor.jpg" alt="Organic Services" />
+        <a href="data-collection-team.html" class="team-card">
+          <img src="image/sensor.jpg" alt="Data Collection Team" />
           <div class="overlay-text">
             <h3>Data Collection Team</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <body>
@@ -174,12 +183,15 @@
     </body>
     <body>
       <!-- Contact Section -->
-      <section class="contact-section">
+      <section id="contact-section" class="contact-section">
         <div class="contact-info">
           <div class="info-item">
             <span>📧</span>
             <h3>Email</h3>
-            <p>contact@flex.co</p>
+            <p>
+              mario.giraldo@csun.edu <br />
+              alex.modarresi@csun.edu
+            </p>
           </div>
           <div class="info-item">
             <span>📞</span>
@@ -191,6 +203,7 @@
             <h3>Office</h3>
             <p>1686, Geraldine Lane<br />New York, NY 10013</p>
           </div>
+          <!--
           <div class="info-item">
             <span>🔗</span>
             <h3>Socials</h3>
@@ -201,6 +214,7 @@
               <a href="#"><i>LI</i></a>
             </div>
           </div>
+          -->
         </div>
         <!-- Contact Form -->
         <div class="contact-form">
@@ -240,6 +254,7 @@
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
+          <!--
           <div class="footer-products">
             <h4>Products</h4>
             <ul>
@@ -250,11 +265,13 @@
               <li>...</li>
             </ul>
           </div>
+          -->
           <div class="footer-contact">
             <h4>Contact Us</h4>
             <p>Business Inquiry: <strong>***-***-****</strong></p>
             <p>Customer Care: <strong>***-***-****</strong></p>
           </div>
+          <!--
           <div class="footer-social">
             <h4>Social</h4>
             <div class="social-icons">
@@ -264,14 +281,24 @@
               <a href="#">YT</a>
             </div>
           </div>
+          -->
         </div>
       </footer>
     </body>
     <!-- 2nd Footer Section -->
-    <footer>
+    <footer class="footer2">
       <p>&copy; 2024 ColCo. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      document
+        .querySelector(".contact-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent the default anchor behavior
+          document.querySelector("#contact-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+    </script>
   </body>
 </html>

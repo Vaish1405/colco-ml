@@ -1,4 +1,6 @@
-/* Google Fonts */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -8,6 +10,7 @@
 }
 /* Body and Overall Layout */
 body {
+  margin: 0;
   background-color: #15372c;
   color: white;
   line-height: 1.6;
@@ -66,7 +69,51 @@ nav ul li .contact-btn:hover {
   border: 2px solid #b0452d;
 }
 
-/* Hero Section */
+/* Dropdown container */
+.dropdown {
+  position: relative; /* To position the dropdown menu relative to the parent */
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the parent */
+  left: 0;
+  background-color: white;
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Dropdown menu items */
+.dropdown-menu li {
+  padding: 10px 20px; /* Add your custom padding */
+  white-space: nowrap;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #15372c;
+  font-size: 14px;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Intro Section */
 .intro {
   text-align: center;
   padding: 100px 20px;
@@ -169,12 +216,12 @@ button:hover {
   align-items: flex-start;
   justify-content: space-between;
   padding: 3rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
+  width: 100%;
+  gap: 5rem;
   background-color: white;
 }
 .mission-text h2 {
+  text-align: center;
   color: #1f4e3c;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -507,11 +554,9 @@ button:hover {
 }
 
 /* Footer */
-footer {
+.footer2 {
   text-align: center;
   padding: 20px 10px;
   background-color: #12291d;
   font-size: 14px;
 }
-
-

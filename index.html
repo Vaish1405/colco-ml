@@ -5,18 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X_UA_Compartible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocoa Project Website</title>
-    <style>
-      h1 {
-        color: white;
-        font-size: 42px;
-        text-align: center;
-      }
-      p {
-        color: white;
-        text-align: center;
-      }
-    </style>
+    <title>Home Page</title>
     <!-- Link To CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -28,8 +17,17 @@
           <img src="image/bean_icon.png" />
           <span>ColCo</span>
         </div>
-        <ul>
+        <ul
+          style="
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+          "
+        >
           <li><a href="index.html">The Project</a></li>
+<<<<<<< Updated upstream
           <li class="dropdown">
             <a href="ml.html">Meet the Teams</a>
             <ul class="dropdown-menu">
@@ -38,6 +36,9 @@
               <li><a href="#">Data Collection</a></li>
             </ul>
           </li>
+=======
+          <li><a href="ml.html">Meet the Teams</a></li>
+>>>>>>> Stashed changes
           <li><a href="#contact-section" class="contact-btn">Contact Us</a></li>
         </ul>
       </nav>
@@ -58,8 +59,8 @@
         detect and manage cocoa pod diseases efficiently and precisely.
       </p>
       <div class="buttons">
-        <a href="#" class="btn get-started">Learn More</a>
-        <!--<a href="#" class="btn start-trial">Start free trial</a>-->
+        <a href="#" class="btn get-started">Get Started</a>
+        <a href="#" class="btn start-trial">Start free trial</a>
       </div>
     </section>
 
@@ -69,6 +70,7 @@
         <img src="image/cocoa_pods.png" />
       </div>
     </section>
+
     <!-- Our Mission -->
     <section class="mission-section">
       <div class="mission-text">
@@ -106,32 +108,24 @@
 
     <!-- Meet the Team Section -->
     <section class="team-section">
-      <h2>Meet the Team!</h2>
+      <h2>Our Agricultural Innovations</h2>
       <div class="team-container">
         <!-- Card 1 -->
         <a href="#" class="team-card">
-          <img src="image/cocoa_plant.jpg" alt="Colombia Team" />
+          <img src="image/cocoa_plant.jpg" alt="Machine Learning Team" />
           <div class="overlay-text">
             <h3>Colombia Team</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </a>
-
         <!-- Card 2 -->
-        <a
-          href="ml.html"
-          target="_blank"
-          style="text-decoration: none; display: block"
-        >
-          <div class="team-card">
-            <img src="image/plant-ml.jpg" alt="Machine Learning Team" />
-            <div class="overlay-text">
-              <h3>Machine Learning Team</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        <a href="diseaseDetection.html" class="team-card">
+          <img src="image/plant-ml.jpg" alt="Machine Learning Team" />
+          <div class="overlay-text">
+            <h3>Disease Detection</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </a>
-
         <!-- Card 3 -->
         <a href="data-collection-team.html" class="team-card">
           <img src="image/sensor.jpg" alt="Data Collection Team" />
@@ -143,53 +137,11 @@
       </div>
     </section>
     <body>
-      <!-- Testimonials Section -->
-      <section class="testimonials-section">
-        <h2>Testimonials</h2>
-        <div class="testimonials-container">
-          <!-- Testimonial 1 -->
-          <div class="testimonial">
-            <img src="kyla.jpg" alt="Kyla Harmon" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et.
-            </p>
-            <h4>Kyla Harmon</h4>
-          </div>
-          <!-- Testimonial 2 -->
-          <div class="testimonial">
-            <img src="ryan.jpg" alt="Ryan Menzie" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et.
-            </p>
-            <h4>Ryan Menzie</h4>
-          </div>
-          <!-- Testimonial 3 -->
-          <div class="testimonial">
-            <img src="aldrich.jpg" alt="Aldrich Fowler" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et.
-            </p>
-            <h4>Aldrich Fowler</h4>
-          </div>
-        </div>
-
-        <!-- Carousel Dots -->
-        <div class="carousel-dots">
-          <div class="dot"></div>
-          <div class="dot active"></div>
-          <div class="dot"></div>
-        </div>
-      </section>
-    </body>
-    <body>
       <!-- Contact Section -->
       <section id="contact-section" class="contact-section">
         <div class="contact-info">
           <div class="info-item">
-            <span>📧</span>
+            <img src="image/envelop.png" alt="envelop icon">
             <h3>Email</h3>
             <p>
               mario.giraldo@csun.edu <br />
@@ -197,18 +149,18 @@
             </p>
           </div>
           <div class="info-item">
-            <span>📞</span>
+            <img src="image/phone.png" alt="phone icon">
             <h3>Phone</h3>
             <p>(818) 677-4431 <br /></p>
           </div>
           <div class="info-item">
-            <span>📍</span>
+            <img src="image/location.png" alt="location icon">
             <h3>Office</h3>
             <p>1686, Geraldine Lane<br />New York, NY 10013</p>
           </div>
           <!--
           <div class="info-item">
-            <span>🔗</span>
+            <img src="image/social.png" alt="social icon">
             <h3>Socials</h3>
             <div class="social-icons">
               <a href="#"><i>FB</i></a>

@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <!-- Link To CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/nav.css">
   </head>
   <!--Whatever we see on the Page-->
   <body>
@@ -27,38 +29,34 @@
           "
         >
           <li><a href="index.html">The Project</a></li>
-          <li><a href="ml.html">Meet the Teams</a></li>
+          <li><a href="teams.html">Meet the Teams</a></li>
           <li><a href="#contact-section" class="contact-btn">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <!--intro Statement-->
-    <section class="intro">
-      <h1>
-        <strong>
-          Revolutionizing Cocoa <br />
-          Farming with AI
-        </strong>
-      </h1>
-
-      <p>
-        Col Co (short for Columbian Cocoa) is an innovative project aimed at
-        transforming cocoa farming through advanced technology. With the power
-        of machine learning and computer vision, we are empowering farmers to
-        detect and manage cocoa pod diseases efficiently and precisely.
-      </p>
-      <div class="buttons">
-        <a href="#" class="btn get-started">Get Started</a>
-        <a href="#" class="btn start-trial">Start free trial</a>
+    <section class="hero">
+      <!-- Curvy background -->
+      <svg class='svg' viewBox="0 0 1440 539" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
+      </svg>
+      
+      <div class="float-text">
+        <h1>Revolutionizing Cocoa Farming With AI</h1>
+          <p>Col Co (short for Columbian Cocoa) is an innovative project aimed at
+            transforming cocoa farming through advanced technology. With the power
+            of machine learning and computer vision, we are empowering farmers to
+            detect and manage cocoa pod diseases efficiently and precisely.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn get-started">Get Started</a>
+            <a href="#" class="btn start-trail">Start Free Trial</a>
+          </div>
       </div>
-    </section>
-
-    <!--wave-->
-    <section class="wave-section">
-      <div class="content">
-        <img src="image/cocoa_pods.png" />
-      </div>
-    </section>
+  </section>
+  
+    <section class="image-section">
+      <img src="image/cocoa_pods.png" alt="">
+    </section>    
 
     <!-- Our Mission -->
     <section class="mission-section">

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Text</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .uni {
+            position: relative;
+            margin-top: -110px; 
+            z-index: 0;
+        }
+
+        .uni svg {
+            display: block; 
+            width: 100%;
+        }
+
+        .uni-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1; 
+        }
+        .uni-info h2 {
+            font-size: 30px;
+            color: #023F3A;
+            margin: 0;
+        }
+        .team {
+            text-align: center;
+            padding: 40px 20px;
+            margin: auto;
+        }
+        h3 {
+            font-size: 26px;
+            color: #023F3A;
+            margin-bottom: 10px;
+        }
+        .line-break {
+            width: 80%;
+            height: 2px;
+            background-color: #023F3A;
+            margin: 10px auto;
+        }
+
+        .team-description {
+            font-size: 18px;
+            color: #023F3A;
+            max-width: 800px;
+            margin: 0 auto 20px auto; 
+        }
+        .learn-more-btn {
+            background-color: #023F3A;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0), 0 4px 0 0 #C13512; 
+        }
+
+        .member-image {
+            width: 80px;
+            height: 80px;
+            background-color: #023F3A;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+        }
+
+        .team-member h4 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #023F3A;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #023F3A;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+          <div class="logo">
+            <img src="image/bean_icon.png" />
+            <span>Col Co.</span>
+          </div>
+          <ul
+            style="
+              display: flex;
+              list-style: none;
+              gap: 20px;
+              margin: 0;
+              padding: 0;
+            "
+          >
+            <li><a href="index.html">The Project</a></li>
+            <li><a href="#teams">Meet the Teams</a></li>
+            <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section class="hero">
+        <!-- Curvy background -->
+        <svg class='svg' viewBox="0 0 1440 539" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
+        </svg>
+        
+        <div class="float-text">
+            <h1>Meet Our Teams</h1>
+            <p>Our project brings together students and faculty from California State University, Northridge, and Ingeniera Biomédica at Universidad de Manizales in an interdisciplinary and international effort to advance smart farming. Learn more about each team's contributions to this groundbreaking project.</p>
+        </div>
+    </section>
+
+    <div class="uni">
+        <svg viewBox="0 0 1440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1443 0C1443 0 1133.01 68.6134 931.887 70.6791C730.762 72.7447 626.386 17.0071 449.607 31.143C272.828 45.2788 -6 125.245 -6 125.245V344H1443V0Z" fill="#F2EEE9"/>
+        </svg>
+        <div class="uni-info">
+            <img />
+            <h2>California State University, Northridge</h2>
+        </div>
+
+    </div>
+
+    <section class="team">
+        <h3>Machine Learning</h3>
+        <hr class="line-break" />
+        <p class="team-description">
+            This would be a brief description of this team’s responsibilities and how it fits into the project.
+        </p>
+        <button class="learn-more-btn">Learn More</button>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Vaishnavi Sen</h4>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Serineh Megredichian</h4>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Denise Pacheco</h4>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Victoria Miteva</h4>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Geoffrey Anselmo</h4>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Ricky Malagon</h4>
+                <p>Computer Science Student</p>
+            </div>
+        </div>
+    </section>
+
+
+        
+</body>
+</html>
+

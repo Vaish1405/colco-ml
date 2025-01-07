@@ -11,61 +11,49 @@ html {
 /* Body and Overall Layout */
 body {
   margin: 0;
-  background-color: #023F3A;
+  /* background-color: #023F3A; */
   color: white;
   line-height: 1.6;
   overflow-x: hidden;
 }
-
-/* Navigation Bar */
-header {
-  background-color: #fff;
-  border-bottom: 2px solid #ddd;
+.buttons .btn {
+  display: inline-block;
   padding: 10px 20px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #3a2e2d; /* Coffee color */
-}
-
-.logo img {
-  width: 20px;
-}
-
-nav {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-left: 20px;
-}
-
-nav li a {
-  right: 20px;
+  margin: 10px;
   text-decoration: none;
-  color: #023F3A;
-  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s ease;
+  width: 200px;
+  height: 60px;
+  text-align: center;
 }
 
-nav li .contact-btn {
-  background-color: #C13512;
-  color: #fff;
-  padding: 8px 12px;
-  transition: 0.3s ease;
-}
-
-nav li .contact-btn:hover {
+.get-started {
   background-color: transparent;
-  color: #3a2e2d;
-  border: 2px solid #C13512;
+}
+
+.start-trial {
+  background-color: transparent;
+  color: #023F3A;
+}
+
+.get-started:hover {
+  background-color: white;
+  color: #023F3A;
+}
+
+.start-trial:hover {
+  background-color: white;
+  color: #023F3A;
+}
+
+.image-section img {
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin-top: -15%;
 }
 
 /* Teams Title Section */
@@ -88,6 +76,7 @@ nav li .contact-btn:hover {
   padding: 50px 20px; /* Reduce padding */
   max-width: 800px;
   margin: 0 auto;
+  background-color: #023F3A;
 }
 
 .intro h1 {

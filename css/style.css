@@ -127,33 +127,6 @@ body {
   background-color: white;
   color: #023F3A;
 }
-.wave-section img {
-  width: 700px;
-  height: auto;
-  border-radius: 10px;
-}
-/* Wave Section Container */
-.wave-section {
-  position: relative;
-  background-color: #023F3A; /* Dark Green */
-  color: white;
-  padding: 2rem 1rem; /* Adjust padding */
-  text-align: center;
-}
-/* The wave itself */
-.wave-section::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; 
-  left: 0;
-  width: 100%;
-  height: 300px; 
-  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'><path d='M0 0 Q 300 100 600 0 T 1200 0 V 120 H 0 Z' fill='%23ffffff'/></svg>");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
 
 /* Content inside the wave section */
 .content {
@@ -181,12 +154,11 @@ button:hover {
 .mission-section {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: left;
   justify-content: space-between;
   padding: 80px;
   width: 100%;
   gap: 5rem;
-  background-color: white;
 }
 
 .mission-text h2 {
@@ -200,11 +172,6 @@ button:hover {
   font-size: 1.rem;
   color: #555;
   margin-bottom: 1rem;
-}
-
-/* Text */
-.mission-text {
-  flex: 1;
 }
 
 /* Right Content (Images) */
@@ -224,11 +191,10 @@ button:hover {
 
 /* Icons Section */
 .icons-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 1.5rem;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .icon {
@@ -246,6 +212,7 @@ button:hover {
   font-size: 1rem;
   color: #1f4e3c;
 }
+
 /* Image Section Below the Wave */
 .image-section {
   background-color: #ffffff; /* White background */

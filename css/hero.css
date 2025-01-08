@@ -17,8 +17,11 @@
   }
   h1 {
     font-size: 40px;
+    padding-bottom: 3%;
   }
   p {
     font-size: 16px;
     margin-bottom: 3%;
+    max-width: 800px;
+    margin: auto;
   }

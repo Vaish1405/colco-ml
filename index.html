@@ -48,8 +48,8 @@
             detect and manage cocoa pod diseases efficiently and precisely.
           </p>
           <div class="buttons">
-            <a href="#" class="btn get-started">Get Started</a>
-            <a href="#" class="btn start-trail">Start Free Trial</a>
+            <a href="#" class="btn learn-more">Learn More</a>
+            <a class="btn start-trail" href="trial.html">Start Free Trial</a>
           </div>
       </div>
   </section>
@@ -94,7 +94,7 @@
     </section>
 
     <!-- Meet the Team Section -->
-    <section class="team-section">
+    <section class="team-section" id="details">
       <h2>Our Agricultural Innovations</h2>
       <div class="team-container">
         <!-- Card 1 -->
@@ -235,6 +235,14 @@
         .addEventListener("click", function (e) {
           e.preventDefault(); // Prevent the default anchor behavior
           document.querySelector("#contact-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+        document
+        .querySelector(".learn-more")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector("#details").scrollIntoView({
             behavior: "smooth",
           });
         });

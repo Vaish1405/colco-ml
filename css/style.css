@@ -16,6 +16,11 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+.buttons {
+  padding: 2%;
+}
+
 .buttons .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -30,21 +35,7 @@ body {
   text-align: center;
 }
 
-.get-started {
-  background-color: transparent;
-}
-
-.start-trial {
-  background-color: transparent;
-  color: #023F3A;
-}
-
-.get-started:hover {
-  background-color: white;
-  color: #023F3A;
-}
-
-.start-trial:hover {
+.hero .btn:hover {
   background-color: white;
   color: #023F3A;
 }

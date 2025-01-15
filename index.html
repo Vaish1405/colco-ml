@@ -5,59 +5,115 @@
     <meta http-equiv="X_UA_Compartible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ColCo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="icon" href="image/bean_icon.png" />
   </head>
   <body>
-    <header class="navbar">
-      <nav>
-        <div class="logo">
-          <img src="image/bean_icon.png" />
-          <span>ColCo</span>
-        </div>
-        <ul
-          style="
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-          "
-        >
-          <li><a href="index.html">Home</a></li>
-          <li><a href="teams.html">Meet the Teams</a></li>
-          <li><a href="#contact-section" class="contact-btn">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="hero">
-      <!-- Curvy background -->
-      <svg class='svg' viewBox="0 0 1440 539" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
-      </svg>
-      
-      <div class="float-text">
-        <h1>Revolutionizing Cocoa Farming With AI</h1>
-          <p>Col Co (short for Columbian Cocoa) is an innovative project aimed at
-            transforming cocoa farming through advanced technology. With the power
-            of machine learning and computer vision, we are empowering farmers to
-            detect and manage cocoa pod diseases efficiently and precisely.
-          </p>
-          <div class="buttons">
-            <a href="#mission-section" class="btn learn-more">Learn More</a>
-            <a class="btn start-trail" href="trial.html">Start Free Trial</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="navbar-brand logo" href="#">
+              <img src="image/bean_icon.png" />
+              <span>ColCo</span>
           </div>
-      </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav">
+                  <ul class="navbar-nav nav-menu">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Meet the Teams</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link contact-btn" href="">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>  
+  <section class="home-hero">
+    <div class="hero">
+        <svg class="svg-lg" viewBox="0 0 1440 737" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 736.683C0 736.683 308.277 638.338 508.292 635.378C708.306 632.417 812.106 712.307 987.909 692.045C1163.71 671.784 1441 557.167 1441 557.167V0H0V736.683Z" fill="#023F3A"/>
+            </svg>
+            
+        <svg class="svg-sm" viewBox="0 0 430 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 289C0 289 91.9911 250.419 151.676 249.258C211.361 248.096 242.336 279.437 294.796 271.489C347.256 263.54 430 218.576 430 218.576V0H0V289Z" fill="#023F3A"/>
+        </svg>
+            
+        <div class="float-text">
+            <h1>Revolutionizing Cocoa Farming With AI</h1>
+            <p>Col Co (short for Columbian Cocoa) is an innovative project aimed at
+                transforming cocoa farming through advanced technology. With the power
+                of machine learning and computer vision, we are empowering farmers to
+                detect and manage cocoa pod diseases efficiently and precisely.
+            </p>
+            <div class="buttons">
+                <a href="#mission-section" class="btn learn-more">Learn More</a>
+                <a class="btn start-trail" href="trial.html">Start Free Trial</a>
+            </div>
+        </div>
+    </div>
   </section>
   
-    <section class="image-section">
+    <section class="hero-img">
       <img src="image/cocoa_pods.png" alt="">
     </section>    
 
+    <section class="mission-section py-5" id="mission-section">
+        <div class="row">
+          <!-- Mission Text -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2>Our Mission</h2>
+            <p>
+              Cocoa farming faces numerous challenges, particularly from diseases
+              that can devastate crops and livelihoods. Col Co aims to tackle these
+              challenges by introducing an image-based disease detection system.
+              Using deep learning and image processing, our system delivers fast,
+              accurate, and scalable disease diagnostics.
+            </p>
+            <div class="row text-center mt-4">
+              <div class="col-4">
+                <img src="image/ai-insights.png" alt="AI Insights" class="img-fluid mb-2" style="max-width: 50px;">
+                <p>AI-Powered Insights</p>
+              </div>
+              <div class="col-4">
+                <img src="image/certified-solutions.png" alt="Certified Solutions" class="img-fluid mb-2" style="max-width: 50px;">
+                <p>Certified Solutions</p>
+              </div>
+              <div class="col-4">
+                <img src="image/productivity.png" alt="Productivity" class="img-fluid mb-2" style="max-width: 50px;">
+                <p>Enhanced Productivity</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Mission Images -->
+          <div class="col-lg-6 pl-5">
+            <div class="row no-gutters">
+              <div class="col-6 pr-1">
+                <img src="image/plants.jpg" alt="Plants" class="img-fluid rounded">
+              </div>
+              <div class="col-6 pl-1">
+                <img src="image/cocoa_pods.jpg" alt="Cocoa Pods" class="img-fluid rounded">
+              </div>
+              <div class="col-12 mt-2">
+                <img src="image/bowl_of_cocoa.jpg" alt="Bowl of Cocoa" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
     <!-- Our Mission -->
-    <section class="mission-section" id="mission-section">
+    <!-- <section class="mission-section" id="mission-section">
       <div class="mission-text">
         <h2>Our Mission</h2>
         <p>
@@ -67,7 +123,6 @@
           Using deep learning and image processing, our system delivers fast,
           accurate, and scalable disease diagnostics.
         </p>
-        <!-- Icons Section -->
         <div class="icons-section">
           <div class="icon">
             <img src="image/ai-insights.png" />
@@ -83,13 +138,12 @@
           </div>
         </div>
       </div>
-      <!-- Right Side: Images -->
       <div class="mission-images">
         <img src="image/plants.jpg" />
         <img src="image/cocoa_pods.jpg" />
         <img src="image/bowl_of_cocoa.jpg" />
       </div>
-    </section>
+    </section> -->
 
     <!-- Meet the Team Section -->
     <section class="team-section" id="details">
@@ -121,7 +175,6 @@
         </a>
       </div>
     </section>
-    <body>
       <!-- Contact Section -->
       <section id="contact-section" class="contact-section">
         <div class="contact-info">
@@ -227,21 +280,21 @@
       </footer>
     </body>
     <script>
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission
+      // document.getElementById("contact-form").addEventListener("submit", function (event) {
+      //   event.preventDefault(); // Prevent the default form submission
     
-        // Get the form data
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+      //   // Get the form data
+      //   const email = document.getElementById("email").value;
+      //   const message = document.getElementById("message").value;
     
-        // Create the mailto link
-        const subject = "Contact Form Submission";
-        const body = `Message from: ${email}\n\n${message}`;
-        const mailtoLink = `mailto:colcaoai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      //   // Create the mailto link
+      //   const subject = "Contact Form Submission";
+      //   const body = `Message from: ${email}\n\n${message}`;
+      //   const mailtoLink = `mailto:colcaoai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
-        // Open the email client
-        window.location.href = mailtoLink;
-      });
+      //   // Open the email client
+      //   window.location.href = mailtoLink;
+      // });
     </script>
     
 </html>

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<!--html hides data from page-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X_UA_Compartible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <!-- Link To CSS-->
+    <title>ColCo</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="icon" href="image/bean_icon.png" />
   </head>
-  <!--Whatever we see on the Page-->
   <body>
     <header class="navbar">
       <nav>
@@ -28,9 +26,9 @@
             padding: 0;
           "
         >
-          <li><a href="index.html">The Project</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="teams.html">Meet the Teams</a></li>
-          <li><a href="index.html#contact-section" class="contact-btn">Contact Us</a></li>
+          <li><a href="#contact-section" class="contact-btn">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +46,7 @@
             detect and manage cocoa pod diseases efficiently and precisely.
           </p>
           <div class="buttons">
-            <a href="#" class="btn learn-more">Learn More</a>
+            <a href="#mission-section" class="btn learn-more">Learn More</a>
             <a class="btn start-trail" href="trial.html">Start Free Trial</a>
           </div>
       </div>
@@ -59,7 +57,7 @@
     </section>    
 
     <!-- Our Mission -->
-    <section class="mission-section">
+    <section class="mission-section" id="mission-section">
       <div class="mission-text">
         <h2>Our Mission</h2>
         <p>
@@ -228,24 +226,22 @@
         <p>&copy; 2024 ColCo. All Rights Reserved.</p>
       </footer>
     </body>
-
     <script>
-      document
-        .querySelector(".contact-btn")
-        .addEventListener("click", function (e) {
-          e.preventDefault(); // Prevent the default anchor behavior
-          document.querySelector("#contact-section").scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-        document
-        .querySelector(".learn-more")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector("#details").scrollIntoView({
-            behavior: "smooth",
-          });
-        });
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Get the form data
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+    
+        // Create the mailto link
+        const subject = "Contact Form Submission";
+        const body = `Message from: ${email}\n\n${message}`;
+        const mailtoLink = `mailto:colcaoai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+        // Open the email client
+        window.location.href = mailtoLink;
+      });
     </script>
-  </body>
+    
 </html>

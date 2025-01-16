@@ -66,11 +66,12 @@ nav .contact-btn:hover {
    z-index: 1;
 }
 h1 {
-   font-size: 2rem;
+   font-size: 3rem;
+   font-weight: bold;
    padding-bottom: 3%;
 }
 p {
-   font-size: 0.85rem;
+   font-size: 1.2rem;
    margin-bottom: 3%;
    margin: auto;
 }

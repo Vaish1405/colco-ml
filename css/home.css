@@ -24,7 +24,7 @@
     margin: 0 auto;
   }
   
-  .team-title h1 {
+  .team-title x {
     font-size: 48px;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -57,57 +57,31 @@
     padding: 3%;
   }
   
-  .mission-text h2 {
-    text-align: center;
+  .mission-section h2 {
     color: #1f4e3c;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-weight: bolder;
   }
   
-  .mission-text p {
-    font-size: 1.rem;
+  .mission-section p {
+    font-size: 1.2rem;
     color: #555;
     margin-bottom: 1rem;
   }
-  
-  /* Right Content (Images) */
-  .mission-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column grid */
-    gap: 1rem;
-    flex: 1;
+
+  .mission-section img {
+    border-radius: 12px;
   }
-  
-  .mission-images img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover; /* Ensure consistent image sizing */
+  .mission-img {
+    aspect-ratio: 1;
+    object-fit: cover;
   }
-  
-  /* Icons Section */
-  .icons-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 1.5rem;
-  }
-  
-  .icon {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .icon img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .icon span {
-    font-size: 1rem;
-    color: #1f4e3c;
-  }
+
+
+
+
+
+
   
   /* Meet the Team Section */
   .team-section {

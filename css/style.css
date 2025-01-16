@@ -18,7 +18,9 @@ html {
   margin-right: 2%;
   justify-content: space-between;
 }
-
+.navbar-nav {
+  text-align: center;
+}
 .nav-item {
   display: inline-block;
   padding: 0px 15px;
@@ -36,8 +38,9 @@ html {
   color: #C13512 !important;
 }
 nav .contact-btn {
-  padding: 10px 20px ;
+  padding: 5px 20px !important;
   background-color: #C13512;
+  border: 2px solid transparent;
   color: #fff !important;
 }
 nav .contact-btn:hover {
@@ -110,9 +113,6 @@ p {
    }
    .hero p {
        font-size: 0.6rem;
-   }
-   .hero .buttons {
-       padding: 0;
    }
    .hero .btn {
        font-size: 0.8rem;

@@ -74,15 +74,14 @@ h3 {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+    gap: 8%;
     justify-self: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .team-member {
     text-align: center;
     border-radius: 10px;
-    padding: 20px;
     cursor: pointer;
 }
 

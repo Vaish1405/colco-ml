@@ -1,216 +1,37 @@
-/* How It Works Section */
-.how-it-works-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.how-it-works-section h2 {
-  font-size: 2rem;
-  color: #1F4E3C; /* Dark green */
-  font-weight: bold;
-}
-/* Contact Section */
-.contact-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem 2rem;
-  background-color: #fff;
-  color: #444;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.info-item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.info-item img {
-  width: 60px;
-  height: 59px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-
-  margin-bottom: 0.5rem;
-}
-.info-item p {
-  color: #444;
-}
-
-.social-icons a {
-  margin: 0 5px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-}
-
-.contact-form {
-  width: 50%;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form label {
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  background-color: #1d3b30;
-  color: #fff;
-  padding: 0.8rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact-form button:hover {
-  background-color: #274e3b;
-}
-/* Meet the Team Section */
-.team-section {
-  text-align: center;
-  padding: 3rem 1.5rem;
-  background-color: white;
-}
-
-.team-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
+h2 {
   color: #1f4e3c;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
-/* Container for the section */
-.team-container {
-  display: flex;
-  justify-self: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 100px auto;
-  max-width: 1200px;
-  padding: 20px 20px;
-  color: #444;
+.about h4 {
+  color: #1f4e3c;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-@media (max-width: 768px) {
-    .team-container {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center the stacked cards */
-    }
 
-    .team-card {
-        width: 90%; /* Make cards take up most of the screen width */
-    }
+.p {
+  font-size: 1rem;
+  padding: 3%;
+  color: #555;
 }
-/* Card Container */
-.team-card {
-  position: relative;
-  width: 300px;
-  height: 300px;
+
+.about img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.step img{
+  filter: brightness(50%);
+}
+
+.step-info {
+  background-color: transparent !important;
+}
+.prototype img {
+  width: 90%;
+  border: 2px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Image Styling */
-.team-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-/* Text Overlay */
-.team-card .overlay-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.5); /* Transparent background */
-  color: #fff;
-  text-align: left;
-}
-
-.team-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.team-card p {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-/* Footer Section */
-.footer {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #444;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-  align-items: start;
-  color: #444;
-}
-
-.footer-logo h3 {
-  color: #1d3b30;
-}
-.footer h4 {
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer ul li {
-  margin: 0.5rem 0;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer a:hover {
-  color: #1d3b30;
-}
-.footer-contact p {
-  color: #444;
-}
-.footer-social .social-icons a {
-  margin-right: 10px;
-  font-size: 1.2rem;
-}
-
-/* Footer */
-.footer2 {
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-  background-color: #12291d;
-  font-size: 14px;
+  margin-bottom: 20px;
 }

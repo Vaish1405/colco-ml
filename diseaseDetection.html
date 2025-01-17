@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/ml.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
   </head>
   <body>
     <header>
@@ -38,99 +38,91 @@
           </div>
       </nav>
   </header> 
-
-    <section class="hero">
-      <!-- Curvy background -->
-      <svg class='svg' viewBox="0 0 1440 539" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
-      </svg>
-      
-      <div class="float-text">
-          <h1>Disease Detection Using ML</h1>
-          <p>Leveraging Deep Learning and Computer Vision to Identify Cocoa Pod
-            Diseases and Minimize Yield Loss.</p>
-            <div class="buttons">
-              <a href="#" class="btn learn-more">Learn More</a>
-              <a class="btn start-trail" href="trial.html">Start Free Trial</a>
-            </div>
-      </div>
+  <section>
+    <div class="hero">
+        <svg class="svg-lg" viewBox="0 0 1440 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
+        </svg>
+        <svg class="svg-sm" viewBox="0 0 430 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 160C0 160 91.9911 142.461 151.676 141.933C211.361 141.405 242.336 155.653 294.796 152.039C347.256 148.426 430 127.985 430 127.985V0H0V160Z" fill="#023F3A"/>
+        </svg>
+            
+        <div class="float-text">
+            <h1>Disease Detection</h1>
+            <p>Leveraging the power of deep learning to accurately detect diseases affecting cacao pods. 
+            </p>
+        </div>
+    </div>
   </section>
 
-    <!-- <section class="hero">
-      <div class="hero-content">
-        <h1>Disease Detection Using ML</h1>
+  <section class="about mt-2 p-4">
+    <h2 class="text-center">About our Project</h2>
+    <div class="row align-items-center pt-0 pl-4 pr-4">
+      <div class="mb-4">
         <p>
-          Leveraging Deep Learning and Computer Vision to Identify Cocoa Pod
-          Diseases and Minimize Yield Loss
+          Our team uses cutting-edge deep learning models, including convolutional neural networks (CNNs), 
+          to detect disease symptoms on cocoa pods. By processing images with advanced techniques and 
+          augmentations, we improve diagnostic accuracy and robustness. With feature extraction focusing on 
+          color, texture, and lesion patterns, our approach helps farmers detect diseases early and protect 
+          their crops.
         </p>
-        <div class="hero-buttons">
-          <a href="#" class="btn">Get Started</a>
-          <a href="#" class="btn secondary">Try Now</a>
-        </div>
       </div>
-      <svg
-        class="wave"
-        viewBox="0 0 1440 320"
-        xmlns="http://www.w3.org/2000/svg" >
-        <path
-          fill="#FFFFFF"
-          +-[.]
-          d="M0,224L48,240C96,256,192,288,288,293.3C384,299,480,277,576,250.7C672,224,768,192,864,181.3C960,171,1056,181,1152,186.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <section class="description-section">
-      <p>
-        Cocoa is a high-value crop with significant economic and cultural
-        importance. Colombia, as a key global player, exported USD 61.4 million
-        in cocoa and derivatives in 2019, contributing to a global market worth
-        USD 103 billion annually. Cocoa crops are threatened by diseases that
-        can lead to up to 38% annual yield loss. Traditional disease detection
-        relies on manual inspection, which is labor-intensive, subjective, and
-        inconsistent.
-      </p>
-      <p>
-        This project uses deep learning techniques, specifically Convolutional
-        Neural Networks (CNNs), to detect diseases in cocoa pods through image
-        classification.
-      </p>
-    </section> -->
-
-    <section class="how-it-works-section">
-      <h2>How It Works Option 1</h2>
-    </section>
-
-        <!-- Meet the Team Section -->
-    <section class="team-section">
-      <div class="team-container">
-        <!-- Card 1 -->
-        <a href="#" class="team-card">
-          <img src="image/tree.jpg" />
-          <div class="overlay-text">
-            <h3>Step 1</h3>
-            <p>Image Collection</p>
-          </div>
-        </a>
-        <!-- Card 2 -->
-        <a href="#" class="team-card">
-          <img src="image/tree.jpg" />
-          <div class="overlay-text">
-            <h3>Step 2</h3>
-           <p>Pre-processing and Model Trainomg</p>
-          </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a href="data-collection-team.html" class="team-card">
-          <img src="image/tree.jpg" alt="Data Collection Team" />
-          <div class="overlay-text">
-            <h3>Step 3</h3>
-            <p>Testing from Live environment/uploaded pictures</p>
-          </div>
-        </a>
+      <div class="col-md-6 text-center mb-3">
+        <h4>Healthy Cocoa Pod</h4>
+        <img src="image/healthy.png" alt="Healthy Cocoa Pods" class="img-fluid rounded">
+        <p>Healthy cocoa pods exhibit uniform color, smooth texture, and no signs of lesions.</p>
       </div>
-    </section>
+      <div class="col-md-6 text-center mb-3">
+          <h4>Diseased Cocoa Pod (Fito)</h4>
+          <img src="image/fito.png" alt="Diseased Cocoa Pods" class="img-fluid rounded">
+          <p>Diseased cocoa pods display discoloration, rough texture, and visible signs of lesions.</p>
+      </div>
+    </div>
+  </section>
 
+  <section class="how-it-works mt-2 p-4">
+    <h2 class="text-center mb-4">How It Works</h2>
+    <div class="row align-items-center pt-0 pl-4 pr-4">
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+          <img src="image/tree.jpg" />
+            <div class="card-body position-absolute step-info">
+                <h3 class="card-title">Step 1</h3>
+                <p class="card-text">Capture the image</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+            <img src="image/tree.jpg" />
+              <div class="card-body position-absolute step-info">
+                  <h3 class="card-title">Step 2</h3>
+                  <p class="card-text">Upload to software</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+            <img src="image/tree.jpg" />
+              <div class="card-body position-absolute step-info">
+                  <h3 class="card-title">Step 3</h3>
+                  <p class="card-text">Get the results</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-2 p-4"  id="prototype">
+    <h2 class="text-center mb-4">Results & Demo</h2>
+    <div class="containerd-flex justify-content-center">
+      <div class="prototype text-center">
+          <img src="image/tree.jpg" alt="Website Prototype">
+          <p>Demo of the ColCo interface</p>
+      </div>
+    </div>
+    </div>
+  </section>
     <footer class="footer2" style="color: white; text-align: center;">
       <p>&copy; 2024 ColCo. All Rights Reserved.</p>
     </footer>

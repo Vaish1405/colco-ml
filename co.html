@@ -4,32 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colombia Team</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="navbar">
-      <nav>
-        <div class="logo">
-          <img src="image/bean_icon.png" />
-          <span>Col Co.</span>
-        </div>
-        <ul
-          style="
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-          "
-        >
-          <li><a href="#project">The Project</a></li>
-          <li><a href="#teams">Meet the Teams</a></li>
-          <li><a href="#contact" class="contact-btn">Contact Us</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">
+                  <img src="image/bean_icon.png" alt="Logo" />
+                  <span>ColCo</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="teams.html">Meet the Teams</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </nav>
-    </header>
-
+  </header> 
     <section class="ml">
       <div class="ml-content">
         <h1 style="text-align: center; font-weight: bold; margin-bottom: 10px;">Colombia Team</h1>

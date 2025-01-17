@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teams</title>
     <link rel="icon" href="image/bean_icon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/teams.css" />
 </head>
 <body>
-    <header class="navbar">
-        <nav>
-          <div class="logo">
-            <img src="image/bean_icon.png" />
-            <span>Col Co.</span>
-          </div>
-          <ul
-            style="
-              display: flex;
-              list-style: none;
-              gap: 20px;
-              margin: 0;
-              padding: 0;
-            "
-          >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="teams.html">Meet the Teams</a></li>
-            <li><a href="index.html#contact-section" class="contact-btn">Contact Us</a></li>
-          </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <img src="image/bean_icon.png" alt="Logo" />
+                    <span>ColCo</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="teams.html">Meet the Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-      </header>
+    </header> 
 
     <section class="hero">
         <!-- Curvy background -->
@@ -239,54 +244,10 @@
             </div>
         </div>
     </section>
-          <!-- 1st Footer Section -->
-          <footer class="footer">
-            <div class="footer-content">
-              <h3>ColCo</h3>
-              <div class="footer-links">
-                <h4>Quick links</h4>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <!--<li><a href="#">Why choose us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>-->
-                </ul>
-              </div>
-              <!--
-              <div class="footer-products">
-                <h4>Products</h4>
-                <ul>
-                  <li>...</li>
-                  <li>...</li>
-                  <li>...</li>
-                  <li>...</li>
-                  <li>...</li>
-                </ul>
-              </div>
-              -->
-              <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Mario Giraldo: <strong>(818) 677-4431</strong></p>
-              </div>
-              <!--
-              <div class="footer-social">
-                <h4>Social</h4>
-                <div class="social-icons">
-                  <a href="#">FB</a>
-                  <a href="#">TW</a>
-                  <a href="#">IG</a>
-                  <a href="#">YT</a>
-                </div>
-              </div>
-              -->
-            </div>
-          </footer>
-          <!-- 2nd Footer Section -->
-          <footer class="footer2">
-            <p>&copy; 2024 ColCo. All Rights Reserved.</p>
-          </footer>
-        </body>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 

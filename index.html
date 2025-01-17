@@ -25,13 +25,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Home</a>
+                          <a class="nav-link" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Meet the Teams</a>
+                          <a class="nav-link" href="teams.html">Meet the Teams</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link contact-btn" href="#">Contact Us</a>
+                          <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
                       </li>
                   </ul>
               </div>
@@ -50,10 +50,8 @@
             
         <div class="float-text">
             <h1>Revolutionizing Cocoa Farming With AI</h1>
-            <p>Col Co (short for Columbian Cocoa) is an innovative project aimed at
-                transforming cocoa farming through advanced technology. With the power
-                of machine learning and computer vision, we are empowering farmers to
-                detect and manage cocoa pod diseases efficiently and precisely.
+            <p>Col Co (Columbian Cocoa) is an innovative project aimed at
+                transforming cocoa farming through advanced technology and empowring farmers.
             </p>
             <div class="buttons">
                 <a href="#mission-section" class="btn learn-more">Learn More</a>
@@ -67,6 +65,7 @@
       <img src="image/cocoa_pods.png" alt="">
     </section>    
 
+    <!--Mission section-->
     <section class="mission-section mt-5 p-4" id="mission-section">
         <div class="row align-items-center p-2">
           <div class="col-lg-8 mb-4 mb-lg-0">
@@ -98,7 +97,7 @@
           <div class="col-lg-4">
             <div class="row no-gutters">
               <div class="col-12 mb-4">
-                <img src="image/bowl_of_cocoa.jpg" alt="Bowl of Cocoa" class="img-fluid">
+                <img src="image/bowl_of_cocoa.jpg" alt="Bowl of Cocoa" class="" style="width: 100%">
               </div>
               <div class="col-6 pr-2">
                 <img src="image/plants.jpg" alt="Plants" class="img-fluid mission-img">
@@ -146,7 +145,7 @@
     </section>
     
     <!-- Contact Section -->
-    <section class="contact-section container py-5">
+    <section class="contact-section container py-5" id="contact">
       <div class="row">
           <!-- Contact Information -->
           <div class="col-md-6 contact-info">
@@ -185,118 +184,11 @@
       </div>
     </section>
 
-  
-      
-      <!-- <section id="contact-section" class="contact-section">
-        <div class="contact-info">
-          <div class="info-item">
-            <img src="image/envelop.png" alt="envelop icon">
-            <h3>Email</h3>
-            <p>
-              mario.giraldo@csun.edu <br />
-              alex.modarresi@csun.edu
-            </p>
-          </div>
-          <div class="info-item">
-            <img src="image/phone.png" alt="phone icon">
-            <h3>Phone</h3>
-            <p>(818) 677-4431 <br /></p>
-          </div>
-          <div class="info-item">
-            <img src="image/location.png" alt="location icon">
-            <h3>Office</h3>
-            <p>1686, Geraldine Lane<br />New York, NY 10013</p>
-          </div>
-
-        </div>
-        <div class="contact-form">
-          <form action="#" method="post">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="email@gmail.com"
-              required
-            />
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              placeholder="Your message..."
-              rows="5"
-              required
-            ></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </section> -->
-
-      <!-- 1st Footer Section -->
-      <footer class="footer">
-        <div class="footer-content">
-          <h3>ColCo</h3>
-          <div class="footer-links">
-            <h4>Quick links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <!--<li><a href="#">Why choose us</a></li>
-              <li><a href="#">Privacy Policy</a></li>-->
-            </ul>
-          </div>
-          <!--
-          <div class="footer-products">
-            <h4>Products</h4>
-            <ul>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-              <li>...</li>
-            </ul>
-          </div>
-          -->
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p>Mario Giraldo: <strong>(818) 677-4431</strong></p>
-          </div>
-          <!--
-          <div class="footer-social">
-            <h4>Social</h4>
-            <div class="social-icons">
-              <a href="#">FB</a>
-              <a href="#">TW</a>
-              <a href="#">IG</a>
-              <a href="#">YT</a>
-            </div>
-          </div>
-          -->
-        </div>
-      </footer>
-      <!-- 2nd Footer Section -->
-      <footer class="footer2">
+      <footer class="footer2" style="color: white; text-align: center;">
         <p>&copy; 2024 ColCo. All Rights Reserved.</p>
       </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // document.getElementById("contact-form").addEventListener("submit", function (event) {
-      //   event.preventDefault(); // Prevent the default form submission
-    
-      //   // Get the form data
-      //   const email = document.getElementById("email").value;
-      //   const message = document.getElementById("message").value;
-    
-      //   // Create the mailto link
-      //   const subject = "Contact Form Submission";
-      //   const body = `Message from: ${email}\n\n${message}`;
-      //   const mailtoLink = `mailto:colcaoai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-      //   // Open the email client
-      //   window.location.href = mailtoLink;
-      // });
-    </script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 </html>

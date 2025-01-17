@@ -1,6 +1,6 @@
 .uni {
     position: relative;
-    margin-top: -15%; 
+    margin-top: -8%; 
     z-index: 0;
 }
 svg {
@@ -18,18 +18,27 @@ svg {
     align-items: center;
 }
 .uni-info h2 {
-    font-size: 30px;
-    min-width: 600px;
     color: #023F3A;
-    margin: 0;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 10%;
 }
 .uni-info img {
-    max-width: 100px;
+    width: 10%;
     height: auto;
+}
+@media screen and (max-width: 600px) {
+    .uni-info h2 {
+        font-size: 1.2rem;
+    }
+    .uni-info img{
+        width: 15%;
+    }
 }
 .team {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 0;
+    /* padding: 40px 20px; */
 }
 h3 {
     margin: 2% auto 0 10px;
@@ -65,7 +74,7 @@ h3 {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 2%;
     justify-self: center;
     margin-top: 3%;
 }
@@ -75,7 +84,6 @@ h3 {
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
-    max-width: 400px;
 }
 
 .team-member:hover {
@@ -83,8 +91,8 @@ h3 {
 }
 
 .member-image {
-    width: 80px;
-    height: 80px;
+    width: 4rem;
+    height: 4rem;
     background-color: #023F3A;
     border-radius: 50%;
     margin: 0 auto 10px;
@@ -99,7 +107,4 @@ h3 {
 .team-member p {
     font-size: 14px;
     color: #023F3A;
-}
-.col-uni {
-    position: relative;
 }

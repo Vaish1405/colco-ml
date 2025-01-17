@@ -60,7 +60,7 @@ nav .contact-btn:hover {
 /* Floating text style */
 .float-text {
    position: absolute;
-   min-width: 90%;
+   min-width: 97%;
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -71,7 +71,7 @@ nav .contact-btn:hover {
 h1 {
    font-size: 3rem;
    font-weight: bold;
-   padding-bottom: 3%;
+   padding-bottom: 2%;
 }
 p {
    font-size: 1.2rem;

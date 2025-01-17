@@ -37,24 +37,33 @@
             </div>
         </nav>
     </header> 
-
-    <section class="hero">
-        <!-- Curvy background -->
-        <svg class='svg' viewBox="0 0 1440 539" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
-        </svg>
-        
-        <div class="float-text">
-            <h1>Meet Our Teams</h1>
-            <p>Our project brings together students and faculty from California State University, Northridge, and Ingeniera Biomédica at Universidad de Manizales in an interdisciplinary and international effort to advance smart farming. Learn more about each team's contributions to this groundbreaking project.</p>
+    <section>
+        <div class="hero">
+            <svg class="svg-lg" viewBox="0 0 1440 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 539C-1 539 309.631 479.916 511.172 478.137C712.713 476.358 817.305 524.355 994.45 512.182C1171.59 500.01 1451 431.149 1451 431.149V0H-1V539Z" fill="#023F3A"/>
+            </svg>
+            <svg class="svg-sm" viewBox="0 0 430 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 160C0 160 91.9911 142.461 151.676 141.933C211.361 141.405 242.336 155.653 294.796 152.039C347.256 148.426 430 127.985 430 127.985V0H0V160Z" fill="#023F3A"/>
+            </svg>
+                
+            <div class="float-text">
+                <h1>Meet Our Teams</h1>
+                <p>Our project brings together students and faculty in an interdisciplinary and international effort to 
+                    advance smart farming. 
+                </p>
+            </div>
         </div>
-    </section>
+      </section>
 
     <div class="uni">
-        <svg viewBox="0 0 1440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="svg-lg" viewBox="0 0 1440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1443 0C1443 0 1133.01 68.6134 931.887 70.6791C730.762 72.7447 626.386 17.0071 449.607 31.143C272.828 45.2788 -6 125.245 -6 125.245V344H1443V0Z" fill="#F2EEE9"/>
         </svg>
-        <div class="uni-info">
+        <svg class="svg-sm" viewBox="0 0 430 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M430 4.17233e-06C430 4.17233e-06 338.009 19.9458 278.324 20.5462C218.639 21.1467 187.664 4.94394 135.204 9.0532C82.744 13.1624 -3.96371e-06 36.4085 -3.96371e-06 36.4085V100H430V4.17233e-06Z" fill="#F2EEE9"/>
+            </svg>
+            
+        <div class="uni-info d-flex justify-content-center w-100 p-5 g-3">
             <img src="image/csun_logo.png"/>
             <h2>California State University, Northridge</h2>
         </div>
@@ -64,14 +73,7 @@
     <section class="team">
         <h3>Machine Learning</h3>
         <hr class="line-break" />
-        <div class="team-description">
-            <p>
-                This would be a brief description of this team’s responsibilities and how it fits into the project.
-            </p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
-
-        <div class="team-grid">
+        <div class="team-grid container">
             <div class="team-member">
                 <div class="member-image"></div>
                 <h4>Vaishnavi Sen</h4>
@@ -109,12 +111,6 @@
     <section class="team">
         <h3>Data Collection</h3>
         <hr class="line-break" />
-        <div class="team-description">
-            <p>
-                This would be a brief description of this team’s responsibilities and how it fits into the project.
-            </p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
         
         <div class="team-grid">
             <div class="team-member">
@@ -154,12 +150,6 @@
     <section class="team">
         <h3>Travelling to Columbia</h3>
         <hr class="line-break" />
-        <div class="team-description">
-            <p>
-                This would be a brief description of this team’s responsibilities and how it fits into the project.
-            </p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
         
         <div class="team-grid">
             <div class="team-member">
@@ -190,11 +180,34 @@
         </div>
     </section>
 
-    <div class="col-uni">
-        <svg viewBox="0 0 1440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!--Faculty Advisors-->
+    <section class="team">
+        <h3>Faculty Advisors</h3>
+        <hr class="line-break" />
+        
+        <div class="team-grid d-flex justify-content-center">
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Dr. Mario Giraldo</h4>
+                <p>Professor - Dept. of Geography</p>
+            </div>
+            <div class="team-member">
+                <div class="member-image"></div>
+                <h4>Dr. Alex Modarresi</h4>
+                <p>Professor - Dept. of Computer Science</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="uni">
+        <svg class="svg-lg" viewBox="0 0 1440 344" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1443 0C1443 0 1133.01 68.6134 931.887 70.6791C730.762 72.7447 626.386 17.0071 449.607 31.143C272.828 45.2788 -6 125.245 -6 125.245V344H1443V0Z" fill="#F2EEE9"/>
         </svg>
-        <div class="uni-info">
+        <svg class="svg-sm" viewBox="0 0 430 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M430 4.17233e-06C430 4.17233e-06 338.009 19.9458 278.324 20.5462C218.639 21.1467 187.664 4.94394 135.204 9.0532C82.744 13.1624 -3.96371e-06 36.4085 -3.96371e-06 36.4085V100H430V4.17233e-06Z" fill="#F2EEE9"/>
+            </svg>
+            
+        <div class="uni-info d-flex justify-content-center w-100 p-5 g-3">
             <img src="image/col-uni.png"/>
             <h2>Ingeniera biomédica en Universidad de Manizales</h2>
         </div>
@@ -204,43 +217,11 @@
     <section class="team">
         <h3>Faculty</h3>
         <hr class="line-break" />
-        <div class="team-description">
-            <p>
-                This would be a brief description of this team’s responsibilities and how it fits into the project.
-            </p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
-        
         <div class="team-grid">
             <div class="team-member">
                 <div class="member-image"></div>
-                <h4>Vaishnavi Sen</h4>
-                <p>Computer Science Student</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image"></div>
-                <h4>Serineh Megredichian</h4>
-                <p>Computer Science Student</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image"></div>
-                <h4>Denise Pacheco</h4>
-                <p>Computer Science Student</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image"></div>
-                <h4>Victoria Miteva</h4>
-                <p>Computer Science Student</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image"></div>
-                <h4>Geoffrey Anselmo</h4>
-                <p>Computer Science Student</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image"></div>
-                <h4>Ricky Malagon</h4>
-                <p>Computer Science Student</p>
+                <h4>Mariana</h4>
+                <p></p>
             </div>
         </div>
     </section>

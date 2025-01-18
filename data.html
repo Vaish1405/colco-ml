@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research</title>
+    <title>Disease Detection</title>
     <link rel="icon" href="image/bean_icon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/ml.css" />
@@ -13,9 +14,9 @@
   </head>
   <body>
     <header>
-      <div class="construction-banner" id="constructionBanner">
+    <div class="construction-banner" id="constructionBanner">
         This website is under construction. Some features may not work as expected. Thank you for your patience!
-      </div>
+    </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
               <a class="navbar-brand logo" href="#">
@@ -51,28 +52,77 @@
         </svg>
             
         <div class="float-text">
-            <h1>Colombia Research Team</h1>
-            <p>Research involves meeting farmers in Colombia and collected necessary data for the project.
+            <h1>Cocoa Farm Monitoring System</h1>
+            <p>Using technology to improve farming outcomes and prevent crop diseases. 
             </p>
         </div>
     </div>
   </section>
 
   <section class="about mt-2 p-4">
-    <h2 class="text-center mb-4">About Us</h2>
+    <h2 class="text-center">Overview</h2>
     <div class="row align-items-center pt-0 pl-4 pr-4">
       <div class="mb-4">
         <p>
-          As students on an international research trip to Colombia, our interdisciplinary fieldwork examines small-scale farming 
-          in the Coffee region, with a specific emphasis on Cacao cultivation. We will use Geographical Information Systems (GIS) to 
-          digitize and map data, creating visualizations of crop distribution and environmental patterns related to cocoa plants. By 
-          integrating field-collected data with GIS tools, our work provides valuable insights that serve as a foundational resource 
-          for decision-making. The collected data will be used by other teams working on this project to develop a deep-learning-based
-          disease detection model and conduct a thorough biological analysis offering clear insights into farmers' crops and 
-          showcasing ways to optimize their crop growth. This opportunity fosters collaboration with Colombian farmers, promoting 
-          cross-cultural exchange while advancing farming techniques, utilizing GIS, and promoting sustainability.  
+            Our system integrates environmental sensors, data analysis, and predictive modeling to help cocoa 
+            farmers monitor their crops and reduce disease risks. This innovative approach 
+            supports sustainable farming practices and increases crop yields.
         </p>
       </div>
+      <div class="col-md-6 text-center mb-3">
+        <h4>Healthy Cocoa Pod</h4>
+        <img src="image/healthy.png" alt="Healthy Cocoa Pods" class="img-fluid rounded">
+        <p>Healthy cocoa pods exhibit uniform color, smooth texture, and no signs of lesions.</p>
+      </div>
+      <div class="col-md-6 text-center mb-3">
+          <h4>Diseased Cocoa Pod (Fito)</h4>
+          <img src="image/fito.png" alt="Diseased Cocoa Pods" class="img-fluid rounded">
+          <p>Diseased cocoa pods display discoloration, rough texture, and visible signs of lesions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works mt-2 p-4">
+    <h2 class="text-center mb-4">How It Works</h2>
+    <div class="row align-items-center pt-0 pl-4 pr-4">
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+          <img src="image/tree.jpg" />
+            <div class="card-body position-absolute step-info">
+                <h3 class="card-title">Step 1</h3>
+                <p class="card-text">Capture the image</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+            <img src="image/tree.jpg" />
+              <div class="card-body position-absolute step-info">
+                  <h3 class="card-title">Step 2</h3>
+                  <p class="card-text">Upload to software</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 step">
+          <div class="team-card position-relative">
+            <img src="image/tree.jpg" />
+              <div class="card-body position-absolute step-info">
+                  <h3 class="card-title">Step 3</h3>
+                  <p class="card-text">Get the results</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-2 p-4"  id="prototype">
+    <h2 class="text-center mb-4">Results & Demo</h2>
+    <div class="containerd-flex justify-content-center">
+      <div class="prototype text-center">
+          <img src="image/tree.jpg" alt="Website Prototype">
+          <p>Demo of the ColCo interface</p>
+      </div>
+    </div>
     </div>
   </section>
     <footer class="footer2" style="color: white; text-align: center;">

@@ -7,6 +7,28 @@ html {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+.construction-banner {
+  background-color: #d45d40; 
+  color: #fff; 
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-bottom: 2px solid #d45d40; 
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  margin-top: 50px; /* Adjust for banner height */
+}
+
 .logo img {
   cursor: pointer;
   height: 25px; 

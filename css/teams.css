@@ -107,3 +107,12 @@ h3 {
     font-size: 14px;
     color: #023F3A;
 }
+
+.card-image img {
+    margin-top: 2px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    
+}

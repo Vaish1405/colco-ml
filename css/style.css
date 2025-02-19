@@ -116,8 +116,39 @@ p {
 }
 
 .hero .btn:hover {
-   background-color: white;
-   color: #023F3A;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background-color: white;
+  color: #023F3A;
+}
+
+.group_image {
+  align-self: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.group_image .text {
+  align-self: flex-start;
+   width: 100%;
+  padding: 10px;
+}
+.group_image p{
+  font-size: small;
+  text-align: left;
+}
+.group_image img{
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
 }
 
 @media screen and (max-width:600px){
@@ -154,6 +185,6 @@ p {
 .footer2 {
   text-align: center;
   padding: 20px 10px;
-  background-color: #12291d;
+  background-color: #023F3A;
   font-size: 14px;
 }

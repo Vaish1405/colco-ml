@@ -1,0 +1,127 @@
+/*Adjust Text*/
+.mb-4 p {
+  text-align: center;
+}
+/*Luker section of the website*/
+.Luker_section {
+  text-align: center;
+  background-color: #f2eee9;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.Luker_section h2 {
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout for Luker Section */
+.Luker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  text-align: center;
+}
+
+/* Individual Columns */
+.luker-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Images in Columns */
+.luker-column img {
+  object-fit: cover;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Heading and Text */
+.luker-column h3 {
+  color: #023f3a;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.luker-column p {
+  font-size: 1rem;
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+/* Heading and Text */
+.Learn-More {
+  text-align: center;
+}
+
+/* Farming Community Section */
+.farming-community {
+  text-align: center;
+  padding: 20px 5%;
+}
+
+.farming-community h2 {
+  margin: 50px 50px;
+}
+/* Adjust container layout */
+.about-the-farmer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Fix text container */
+.farm-text {
+  max-width: 500px; /* Ensures text doesn't stretch too wide */
+  text-align: left;
+}
+
+/* Ensure images are responsive */
+.about-the-farmer img {
+  width: 100%; /* Allows shrinking on smaller screens */
+  max-height: 400px;
+  border-radius: 5px;
+}
+
+
+/* 📌 Make it responsive */
+@media screen and (max-width: 768px) {
+  .about-the-farmer {
+    grid-template-columns: 1fr; /* Stacks into a single column */
+    text-align: center;
+  }
+
+  .farm-text h3 {
+    font-weight: 600;
+  }
+
+  .farm-text {
+    margin-top: 50px;
+    max-width: 90%;
+    text-align: center; /* Center text on mobile */
+  }
+
+  .about-the-farmer img {
+    max-width: 100%;
+  }
+}
+
+/* Responsive Layout for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .Luker {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}

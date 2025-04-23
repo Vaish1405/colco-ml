@@ -1,0 +1,113 @@
+body.upload-page {
+    background-color: #1f4e3c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .upload-container {
+    display: flex; 
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .drag-area {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 2px dashed #bbb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .drag-area:hover {
+    border-color: #1f4e3c;
+    background-color: #f8fdf9;
+  }
+  
+  .drag-area img#placeholder-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .drag-area p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .drag-area span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  #preview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  #spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1f4e3c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 2;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #analyze-btn {
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1f4e3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+  }
+  
+  #analyze-btn:hover {
+    background-color: #144030;
+  }
+  

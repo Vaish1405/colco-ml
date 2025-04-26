@@ -5,19 +5,22 @@
    <title>drag-and-Drop File Uploader - GreatStack</title>
    <link rel="stylesheet" href="css/upload.css">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body class ="upload-page">
 
-    <div class="drag-area" id="drag-area">
-        <img src="image/icon.png" alt="Upload icon" id="placeholder-icon">
-        <p id="upload-text">Drag & Drop or Click to Upload an Image</p>
-        <span>Supported: .jpg, .png, .jpeg</span>
-        <div id="spinner"></div>
-        <img id="preview" alt="Image Preview">
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="drag-area" id="drag-area" style="max-width: 400px; width: 100%;">
+          <img src="image/icon.png" alt="Upload icon" id="placeholder-icon">
+          <p id="upload-text">Drag & Drop or Click to Upload an Image</p>
+          <span>Supported: .jpg, .png, .jpeg</span>
+          <div id="spinner"></div>
+          <img id="preview" alt="Image Preview">
+        <input type="file" accept="image/*" id="input-file" hidden>
+        <button id="analyze-btn">Scan for Disease</button>      
       </div>
-      <input type="file" accept="image/*" id="input-file" hidden>
-      <button id="analyze-btn">Scan for Disease</button>      
-    </div>  
+  </div>
 
     <script>
         const dragArea = document.getElementById('drag-area');

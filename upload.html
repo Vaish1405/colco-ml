@@ -121,24 +121,22 @@ analyzeBtn.addEventListener('click', () => {
   .then(data => {
     predictionResult.textContent = "Prediction: " + data.prediction;
 
-    // 🔥 Hide the drag/upload area and submit button
     dragArea.style.display = 'none';
     analyzeBtn.style.display = 'none';
 
-    // 🔥 Show the "Try Again" button
     tryAgainWrapper.style.display = 'block';
   })
   .catch(error => {
     console.error('Error:', error);
-    predictionResult.textContent = "An error occurred 😢. Check console for details.";
-    tryAgainWrapper.style.display = 'block'; // show try again even on error
+    predictionResult.textContent = "An error occurred. Check console for details.";
+    tryAgainWrapper.style.display = 'block';
     dragArea.style.display = 'none';
     analyzeBtn.style.display = 'none';
   });
 });
 
 tryAgainBtn.addEventListener('click', () => {
-  // 🔥 Reset everything to original state
+  // Reset everything to original state
   predictionResult.textContent = '';
   fileInput.value = '';
   preview.src = '';

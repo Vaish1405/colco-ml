@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="icon" href="image/bean_icon.png" />
+    <!-- Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
     <header>
@@ -116,6 +119,18 @@
       </div>
     </section>
 
+    <!-- Map Section -->
+    <section class="mission-section map-section mt-5 p-4" id="map-section">
+      <div class="row align-items-center p-2">
+        <div class="col-12 text-center">
+          <h2 class="text-center mb-4">Our Farm Visits in Colombia</h2>
+          <div id="map" style="height: 500px; width: 100%; border-radius: 15px; overflow: hidden;"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="team-section container" id="details">
+
     <!-- Meet the Team Section -->
     <section class="team-section container" id="details">
         <h2 class="text-center mb-5">Agricultural Interventions</h2>
@@ -199,6 +214,24 @@
       <footer class="footer2" style="color: white; text-align: center;">
         <p>&copy; 2024 ColCo. All Rights Reserved.</p>
       </footer>
+      <script>
+        // basic map centered on Colombia
+        var map = L.map('map').setView([4.5709, -74.2973], 6);
+      
+        //  (background map)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Palestina, Caldas
+        L.marker([5.0167, -75.6333]).addTo(map)
+        .bindPopup('<b>Farm Visit - Palestina</b><br>Field Study');
+
+       // Belalcázar, Caldas
+       L.marker([4.9947, -75.8084]).addTo(map)
+      .bindPopup('<b>Farm Visit - Belalcázar</b><br>Field Study');
+      </script>
+      
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

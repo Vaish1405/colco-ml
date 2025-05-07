@@ -1,19 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>drag-and-Drop File Uploader - GreatStack</title>
-   <link rel="stylesheet" href="css/upload.css">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X_UA_Compartible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColCo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/upload.css" />
+    <link rel="icon" href="image/bean_icon.png" />
+  </head>
+  <body class="upload-page">
+    <header>
+      <div class="construction-banner" id="constructionBanner">
+        This website is under construction. Some features may not work as expected. Thank you for your patience!
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">
+                  <img src="image/bean_icon.png" alt="Logo" />
+                  <span>ColCo</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="teams.html">Meet the Teams</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="upload.html">Upload Image</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header> 
 
-<body class ="upload-page">
-
-  <h1 class="upload-heading mb-4">Upload Your Image Below!</h1>
-
-   <!-- NEW FORM SECTION  -->
-
+<h1 class="upload-heading mb-4">Upload Your Image Below!</h1>
    <!-- <div class="form-section container d-flex flex-column align-items-center mb-4">
     <form id="user-info-form" style="max-width: 500px; width: 100%;">
       <div class="form-group">
@@ -38,9 +71,8 @@
     </form>
    </div> -->
 
-   <div class="container d-flex flex-column justify-content-center align-items-center">
-
-    <div class="upload-wrapper d-flex flex-column align-items-center">
+<div class="container d-flex flex-column justify-content-center align-items-center">
+  <div class="upload-wrapper d-flex flex-column align-items-center">
 
     <div class="drag-area" id="drag-area" style="max-width: 400px; width: 100%;">
       <img src="image/icon.png" alt="Upload icon" id="placeholder-icon">
@@ -51,80 +83,117 @@
       <input type="file" accept="image/*" id="input-file" hidden>   
     </div>
 
-      <button id="analyze-btn">SUBMIT</button> 
-    </div>
-
+    <button id="analyze-btn">SUBMIT</button> 
   </div>
+</div>
 
-    <script>
-        const dragArea = document.getElementById('drag-area');
-        const fileInput = document.getElementById('input-file');
-        const preview = document.getElementById('preview');
-        const spinner = document.getElementById('spinner');
-        const analyzeBtn = document.getElementById('analyze-btn');
-      
-        // Prevent opening file in new tab on full-page drag-drop
-        window.addEventListener('dragover', (e) => e.preventDefault());
-        window.addEventListener('drop', (e) => e.preventDefault());
-      
-        dragArea.addEventListener('click', () => fileInput.click());
-      
-        dragArea.addEventListener('dragover', (e) => {
-          e.preventDefault();
-          dragArea.classList.add('hover');
-        });
-      
-        dragArea.addEventListener('dragleave', () => {
-          dragArea.classList.remove('hover');
-        });
-      
-        dragArea.addEventListener('drop', (e) => {
-          e.preventDefault();
-          dragArea.classList.remove('hover');
-          const file = e.dataTransfer.files[0];
-          if (file && file.type.startsWith('image/')) {
-            fileInput.files = e.dataTransfer.files;
-            showPreview(file);
-          } else {
-            alert("Please upload a valid image file.");
-          }
-        });
-      
-        fileInput.addEventListener('change', () => {
-          const file = fileInput.files[0];
-          if (file && file.type.startsWith('image/')) {
-            showPreview(file);
-          } else {
-            alert("Please upload a valid image file.");
-          }
-        });
-      
-        function showPreview(file) {
-        const placeholderIcon = document.getElementById("placeholder-icon");
-        const uploadText = document.getElementById("upload-text");
+<script>
+const dragArea = document.getElementById('drag-area');
+const fileInput = document.getElementById('input-file');
+const preview = document.getElementById('preview');
+const spinner = document.getElementById('spinner');
+const analyzeBtn = document.getElementById('analyze-btn');
+const predictionResult = document.getElementById('prediction-result'); // 🔥
 
-        spinner.style.display = 'block';
-        preview.style.display = 'none';
-        analyzeBtn.style.display = 'none';
-        placeholderIcon.style.display = 'none';
-        uploadText.style.display = 'none';
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', (e) => e.preventDefault());
 
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            setTimeout(() => {
-             preview.src = e.target.result;
-            spinner.style.display = 'none';
-            preview.style.display = 'block';
-            analyzeBtn.style.display = 'inline-block';
-         }, 1000);
-         };
-        reader.readAsDataURL(file);
-        } 
-        analyzeBtn.addEventListener('click', () => {
-          alert(" Scanning cocoa pod... (need to onnect to backend here)");
-        });
-      </script>
+dragArea.addEventListener('click', () => fileInput.click());
+
+dragArea.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  dragArea.classList.add('hover');
+});
+
+dragArea.addEventListener('dragleave', () => {
+  dragArea.classList.remove('hover');
+});
+
+dragArea.addEventListener('drop', (e) => {
+  e.preventDefault();
+  dragArea.classList.remove('hover');
+  const file = e.dataTransfer.files[0];
+  if (file && file.type.startsWith('image/')) {
+    fileInput.files = e.dataTransfer.files;
+    showPreview(file);
+  } else {
+    alert("Please upload a valid image file.");
+  }
+});
+
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
+  if (file && file.type.startsWith('image/')) {
+    showPreview(file);
+  } else {
+    alert("Please upload a valid image file.");
+  }
+});
+
+function showPreview(file) {
+  const placeholderIcon = document.getElementById("placeholder-icon");
+  const uploadText = document.getElementById("upload-text");
+
+  spinner.style.display = 'block';
+  preview.style.display = 'none';
+  analyzeBtn.style.display = 'none';
+  placeholderIcon.style.display = 'none';
+  uploadText.style.display = 'none';
+
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    setTimeout(() => {
+      preview.src = e.target.result;
+      spinner.style.display = 'none';
+      preview.style.display = 'block';
+      analyzeBtn.style.display = 'inline-block';
+    }, 1000);
+  };
+  reader.readAsDataURL(file);
+}
+
+const tryAgainWrapper = document.getElementById('try-again-wrapper');
+const tryAgainBtn = document.getElementById('try-again-btn');
+
+analyzeBtn.addEventListener('click', () => {
+  const file = fileInput.files[0];
+  if (!file) {
+    alert("No file selected.");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('file', file);
+
+  spinner.style.display = 'block';
+  analyzeBtn.disabled = true;
+
+  fetch('http://127.0.0.1:5001/predict', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then(data => {
+    spinner.style.display = 'none';
+    analyzeBtn.disabled = false;
+
+    // Store result in sessionStorage (or localStorage if persistent)
+    sessionStorage.setItem('predictionResult', JSON.stringify(data));
+
+    // Redirect to result page
+    window.location.href = 'result.html';
+  })
+  .catch(error => {
+    spinner.style.display = 'none';
+    analyzeBtn.disabled = false;
+    alert("An error occurred: " + error.message);
+  });
+});
+
+</script>
       
 </body>
 </html>
-

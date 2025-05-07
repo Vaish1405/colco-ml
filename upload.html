@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Drag-and-Drop File Uploader - GreatStack</title>
-   <link rel="stylesheet" href="css/upload.css">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body class="upload-page">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X_UA_Compartible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColCo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/upload.css" />
+    <link rel="icon" href="image/bean_icon.png" />
+  </head>
+  <body class="upload-page">
+    <header>
+      <div class="construction-banner" id="constructionBanner">
+        This website is under construction. Some features may not work as expected. Thank you for your patience!
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">
+                  <img src="image/bean_icon.png" alt="Logo" />
+                  <span>ColCo</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="teams.html">Meet the Teams</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="upload.html">Upload Image</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header> 
 
 <h1 class="upload-heading mb-4">Upload Your Image Below!</h1>
    <!-- <div class="form-section container d-flex flex-column align-items-center mb-4">
@@ -48,11 +84,6 @@
     </div>
 
     <button id="analyze-btn">SUBMIT</button> 
-
-    <div id="prediction-result" style="margin-top: 20px; color: white; font-size: 1.2rem;"></div> 
-    <div id="try-again-wrapper" style="margin-top: 20px; display: none;">
-      <button id="try-again-btn" class="btn btn-primary">Try Again 🔁</button>
-    </div>
   </div>
 </div>
 
@@ -127,51 +158,39 @@ const tryAgainBtn = document.getElementById('try-again-btn');
 analyzeBtn.addEventListener('click', () => {
   const file = fileInput.files[0];
   if (!file) {
-    alert("Upload an image first!");
+    alert("No file selected.");
     return;
   }
 
   const formData = new FormData();
   formData.append('file', file);
 
-  predictionResult.textContent = "Analyzing... 🔎";
+  spinner.style.display = 'block';
+  analyzeBtn.disabled = true;
 
-  fetch('http://127.0.0.1:5001/predict', { 
+  fetch('http://127.0.0.1:5001/predict', {
     method: 'POST',
-    body: formData,
+    body: formData
   })
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
   .then(data => {
-    predictionResult.textContent = "Prediction: " + data.prediction;
+    spinner.style.display = 'none';
+    analyzeBtn.disabled = false;
 
-    dragArea.style.display = 'none';
-    analyzeBtn.style.display = 'none';
+    // Store result in sessionStorage (or localStorage if persistent)
+    sessionStorage.setItem('predictionResult', JSON.stringify(data));
 
-    tryAgainWrapper.style.display = 'block';
+    // Redirect to result page
+    window.location.href = 'result.html';
   })
   .catch(error => {
-    console.error('Error:', error);
-    predictionResult.textContent = "An error occurred. Check console for details.";
-    tryAgainWrapper.style.display = 'block';
-    dragArea.style.display = 'none';
-    analyzeBtn.style.display = 'none';
+    spinner.style.display = 'none';
+    analyzeBtn.disabled = false;
+    alert("An error occurred: " + error.message);
   });
-});
-
-tryAgainBtn.addEventListener('click', () => {
-  // Reset everything to original state
-  predictionResult.textContent = '';
-  fileInput.value = '';
-  preview.src = '';
-  preview.style.display = 'none';
-  spinner.style.display = 'none';
-  dragArea.style.display = 'block';
-  analyzeBtn.style.display = 'inline-block';
-  tryAgainWrapper.style.display = 'none';
-
-  // Show upload icon and text again
-  document.getElementById("placeholder-icon").style.display = 'block';
-  document.getElementById("upload-text").style.display = 'block';
 });
 
 </script>

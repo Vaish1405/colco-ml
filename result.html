@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X_UA_Compartible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColCo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/upload.css" />
+    <link rel="icon" href="image/bean_icon.png" />
+      
+  <style>
+    body.result-page {
+      background-color: #1f4e3c;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .result-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .result-card {
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .result-heading {
+      font-size: 2rem;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .result-text {
+      font-size: 1.2rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .btn-back {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: white;
+      color: #1f4e3c;
+      border: 2px solid #1f4e3c;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: #f8fdf9;
+    }
+  </style>
+  </head>
+  <body class="result-page">
+    <header>
+      <div class="construction-banner" id="constructionBanner">
+        This website is under construction. Some features may not work as expected. Thank you for your patience!
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">
+                  <img src="image/bean_icon.png" alt="Logo" />
+                  <span>ColCo</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="teams.html">Meet the Teams</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="upload.html">Upload Image</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link contact-btn" href="index.html#contact">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header> 
+  <div class="result-container">
+    <div class="result-card">
+      <div class="result-heading">Prediction Result</div>
+      <div id="result-output" class="result-text">Loading...</div>
+      <button class="btn-back" onclick="goBack()">🔁 Try Another Image</button>
+    </div>
+</div>
+
+  <script>
+    function goBack() {
+      sessionStorage.removeItem('predictionResult');
+      window.location.href = 'upload.html'; // change if your upload page has a different name
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const result = JSON.parse(sessionStorage.getItem('predictionResult'));
+      const resultDiv = document.getElementById('result-output');
+
+      if (result && result.prediction) {
+        resultDiv.innerHTML = `<p><strong>Prediction:</strong> ${result.prediction}</p>`;
+      } else {
+        resultDiv.innerHTML = `<p>No prediction result found.</p>`;
+      }
+    });
+  </script>
+
+</body>
+</html>

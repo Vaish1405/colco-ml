@@ -116,3 +116,38 @@ h3 {
     border-radius: 100%;
     
 }
+.team-member {
+  position: relative;
+  cursor: pointer;           /* hint that it’s interactive */
+}
+
+/* hidden by default */
+.email-popup {
+  display: none;
+  position: absolute;
+  bottom: -2.5rem;           /* just below the member card */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  font-size: 1.1rem;
+  z-index: 10;
+}
+.email-popup a {
+  color: inherit;          /* use the popup’s text color */
+  text-decoration: none;   /* remove underline */
+}
+
+.email-popup a:hover {
+  text-decoration: underline;
+}
+
+
+/* show on hover */
+.team-member:hover .email-popup {
+  display: block;
+}

@@ -7,7 +7,6 @@
     <link rel="icon" href="image/bean_icon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/teams.css" />
 </head>
 <body>
@@ -76,21 +75,27 @@
         </div>
         <!--Primary Investigator-->
         <section class="team">
-            <h3>Primary Investigator</h3>
-            <hr class="line-break" />
-            <div class="team-grid container d-flex justify-content-center">
-                <div class="team-member">
-                    <div class="member-image">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="image/Mario.jpg" alt="Mario's profile picture"  />
-                        </div>
-                    </div>
-                    <h4>Dr. Mario Giraldo</h4>
-                    <p>Professor - Dept. of Geography</p>
-                </div>
-            </div>
-        </section>
+  <h3>Primary Investigator</h3>
+  <hr class="line-break" />
+  <div class="team-grid container d-flex justify-content-center">
+    <div class="team-member">
+      <div class="member-image">
+        <span class="overlay"></span>
+        <div class="card-image">
+          <img src="image/Mario.jpg" alt="Mario's profile picture" />
+        </div>
+      </div>
+      <h4>Dr. Mario Giraldo</h4>
+      <p>Professor - Dept. of Geography</p>
+
+      <!-- add this popup element -->
+      <div class="email-popup">
+        mario.giraldo@csun.edu
+      </div>
+    </div>
+  </div>
+</section>
+
         <!--Machine Learning Team-->
         <section class="team">
             <h3>Machine Learning</h3>
@@ -302,6 +307,10 @@
                     </div>
                     <h4>Dr. Mario Giraldo</h4>
                     <p>Professor - Dept. of Geography</p>
+                    <!-- add this popup element -->
+                    <div class="email-popup">
+                        <a href="mario.giraldo@csun.edu">mario.giraldo@csun.edu</a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
@@ -312,6 +321,9 @@
                     </div>
                     <h4>Dr. Alex Modarresi</h4>
                     <p>Professor - Dept. of Computer Science</p>
+                        <div class="email-popup">
+                           alex.modarresi@csun.edu
+                        </div>
                 </div>
             </div>
         </section>
@@ -424,6 +436,7 @@
                 
             </div>
         </section>
+
 
         <footer class="footer2" style="color: white; text-align: center;">
             <p>&copy; 2024 ColCo. All Rights Reserved.</p>

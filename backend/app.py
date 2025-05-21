@@ -12,7 +12,7 @@ CORS(app)
 model = load_model('monilia_cnn.h5')
 
 # Define label mapping
-label_map = {0: 'Monilia', 1: 'Healthy'}  
+label_map = {1: 'Monilia', 0: 'Healthy'}  
 
 @app.route('/predict', methods=['POST'])
 def predict():
